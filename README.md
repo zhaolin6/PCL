@@ -18,7 +18,7 @@ The proposed method is detailed as follow.
 
 The core of the framework design lies in weighting the loss of contrast between samples based on the similarity of superpixels.
 
-![](Weighting)
+![](Weighting.png)
 
 
 ### System-Spefic notes:
