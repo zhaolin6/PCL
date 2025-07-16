@@ -7,13 +7,18 @@ The code in this toolbox implements the
 
 ["Purified Contrastive Learning With Global and Local Representation for Hyperspectral Image Classification"].(https://ieeexplore.ieee.org/document/10547362)
 
-More specifically, it is detailed as follow.
+As illustrated in Fig. 1, spatially adjacent patches exhibit substantial overlap across large areas, resulting in remarkably high similarity. Consequently, this leads to an increased number of negative sample pairs with exceedingly high similarity, referred to as “false negative sample pairs.” These false negative sample pairs pose a challenge to the contrastive learning paradigm, which aims to learn representations by bringing positive samples closer while simultaneously pushing negatives farther apart. 
+
+![](Challenge.png)
+
+
+The proposed method is detailed as follow.
 
 ![](Framework.png)
 
-Four kinds of HSI transformation operations are detailed as follow:
+The core of the framework design lies in weighting the loss of contrast between samples based on the similarity of superpixels.
 
-![](operations.png)
+![](Weighting)
 
 
 ### System-Spefic notes:
@@ -34,15 +39,15 @@ First, running the `pretrain_main.py` to pretrain the model, This operation will
 **Please kindly cite the papers if this code is useful and helpful for your research.**
 ```
 @ARTICLE{9734031,
-  author={Zhao, Lin and Luo, Wenqiang and Liao, Qiming and Chen, Siyuan and Wu, Jianhui},
-  journal={IEEE Geoscience and Remote Sensing Letters}, 
-  title={Hyperspectral Image Classification With Contrastive Self-Supervised Learning Under Limited Labeled Samples}, 
-  year={2022},
-  volume={19},
-  number={},
-  pages={1-5},
-  keywords={Feature extraction;Task analysis;Supervised learning;Hyperspectral imaging;Jitter;Training;Kernel;Contrastive learning;hyperspectral image (HSI) classification;limited labeled samples;self-supervised learning~(SSL)},
-  doi={10.1109/LGRS.2022.3159549}}
+@article{zhao2024purified,
+  title={Purified contrastive learning with global and local representation for hyperspectral image classification},
+  author={Zhao, Lin and Li, Jia and Luo, Wenqiang and Ouyang, Er and Wu, Jianhui and Zhang, Guoyun and Li, Wujin},
+  journal={IEEE Transactions on Geoscience and Remote Sensing},
+  volume={62},
+  pages={1--14},
+  year={2024},
+  publisher={IEEE}
+}
 ```
 <hr>
 
