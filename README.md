@@ -5,7 +5,7 @@
 <hr>
 The code in this toolbox implements the
 
-["Purified Contrastive Learning With Global and Local Representation for Hyperspectral Image Classification"].(https://ieeexplore.ieee.org/document/10547362)
+["Purified Contrastive Learning With Global and Local Representation for Hyperspectral Image Classification"](https://ieeexplore.ieee.org/document/10547362)
 
 As illustrated in Fig. 1, spatially adjacent patches exhibit substantial overlap across large areas, resulting in remarkably high similarity. Consequently, this leads to an increased number of negative sample pairs with exceedingly high similarity, referred to as “false negative sample pairs.” These false negative sample pairs pose a challenge to the contrastive learning paradigm, which aims to learn representations by bringing positive samples closer while simultaneously pushing negatives farther apart. 
 
